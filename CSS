@@ -1,0 +1,139 @@
+html,
+body {
+  min-width: 300px;
+   background-color: white;
+  color: blue;
+  line-height: 2;
+  font-family: "Times New Roman", Times, serif;
+ 
+}
+
+#navbar {
+  position: fixed;
+  min-width: 300px;
+  width: 300px;
+  top: 0px;
+  left: 0px;
+  border-color: rgba(100, 202, 22, 0.4);
+  height: 100%;
+  border-radius:20px;
+  border-right: solid;
+  
+}
+
+header { 
+  margin: 11px;
+  color: blue;
+  font-weight: thick;
+  font-size: 1.3em;
+  text-align: center;
+  
+}
+#main-doc header {
+  text-align: left;
+  margin: 1px;
+}
+
+#navbar ul {
+   overflow-y: auto;
+  overflow-x: hidden;
+  height: 90%;
+  padding: 1;
+ 
+}
+
+
+
+
+#navbar li {
+   border-top: 1px solid;
+  color: green;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  cursor: pointer;
+  color: #4ded53;
+  
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 300px;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre;
+  margin: 10px;
+  border-radius: 5px;
+  word-wrap: normal;
+  line-height: 3;
+  position: relative;
+  word-break: normal;
+  padding: 16px;
+  
+}
+
+section article {
+  font-size: 0.98em;
+  color: #4d4ee3;
+  margin: 16px;
+  
+}
+
+section li {
+  margin: 16px 0px 0px 20px;
+}
+
+
+@media only screen and (max-width: 800px) {
+  /* For mobile phones: */
+ 
+
+  #navbar {
+    background-color: 	#FFFACD;
+    max-height: 300px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+    
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+   #navbar ul {
+    border: 2px solid;
+    height: 200px;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 300px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -11px;
+  }
+
+  code {
+     padding-left: 11px;
+    padding-right: 45px;
+    min-width: 233px;
+    margin-left: -21px;
+    width: 100%;
+    padding: 16px;
+   
+  }
+}
